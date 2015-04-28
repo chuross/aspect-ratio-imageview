@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AspectRatioImageView">
+        <attr name="ariv_widthRatio" format="integer" />
+        <attr name="ariv_heightRatio" format="integer" />
+    </declare-styleable>
+</resources>
