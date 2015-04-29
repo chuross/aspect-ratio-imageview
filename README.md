@@ -35,7 +35,7 @@ dependencies {
 }
 ```
 
-# Licence
+# License
 
 ```
 Copyright 2015 chuross
