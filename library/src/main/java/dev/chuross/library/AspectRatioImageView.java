@@ -39,9 +39,12 @@ public class AspectRatioImageView extends ImageView {
             return;
         }
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.AspectRatioImageView, defStyleAttr, defStyleRes);
+
         widthRatio = typedArray.getInteger(R.styleable.AspectRatioImageView_ariv_widthRatio, DEFAULT_ASPECT_RATIO);
         heightRatio = typedArray.getInteger(R.styleable.AspectRatioImageView_ariv_heightRatio, DEFAULT_ASPECT_RATIO);
+
         typedArray.recycle();
+
         validateRatio(widthRatio);
         validateRatio(heightRatio);
     }
@@ -49,9 +52,15 @@ public class AspectRatioImageView extends ImageView {
     @Override
     protected void onMeasure(final int widthMeasureSpec, final int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int aspectRatio = calculateAspectRatio(widthRatio, heightRatio);
+
+        int adjustedWidthRatio = widthRatio / aspectRatio;
+        int adjustedHeightRatio = heightRatio / aspectRatio;
+
         int width = getMeasuredWidth();
-        int sizePerRatio = Math.round(width / widthRatio);
-        int height = sizePerRatio * heightRatio;
+        int sizePerRatio = Math.round(width / adjustedWidthRatio);
+        int height = sizePerRatio * adjustedHeightRatio;
+
         setMeasuredDimension(width, height);
     }
 
@@ -77,5 +86,35 @@ public class AspectRatioImageView extends ImageView {
         if(ratio <= 0) {
             throw new IllegalArgumentException("ratio > 0");
         }
+    }
+
+    private static int calculateAspectRatio(int width, int height) {
+        int max;
+        int min;
+        if(width > height) {
+            max = width;
+            min = height;
+        } else {
+            max = height;
+            min = width;
+        }
+        if(max <= 0 || min <= 0) {
+            return 0;
+        }
+        int result = 0;
+        int i = 1;
+        while(i > 0) {
+            if(max % min == 0) {
+                result = min;
+                break;
+            }
+            max = max % min;
+            if(min % max == 0) {
+                result = max;
+                break;
+            }
+            min = min % max;
+        }
+        return result;
     }
 }
