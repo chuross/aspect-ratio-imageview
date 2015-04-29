@@ -11,6 +11,7 @@ bin/
 gen/
 
 local.properties
+gradle.properties
 
 .classpath
 .project
