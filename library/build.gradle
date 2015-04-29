@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'maven'
 
 android {
     compileSdkVersion 22
@@ -10,10 +11,38 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            aidl.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+        }
+
+        androidTest {
+            manifest.srcFile 'src/androidTest/AndroidManifest.xml'
+            java.srcDirs = ['src/androidTest/java']
+            aidl.srcDirs = ['src/androidTest/java']
+            res.srcDirs = ['src/androidTest/res']
+            assets.srcDirs = ['src/androidTest/assets']
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository url: targetMavenRepositoryDir
+            pom.version = '1.0.0'
+            pom.groupId = 'dev.chuross'
+            pom.artifactId = 'aspect-ratio-imageview'
         }
     }
 }
