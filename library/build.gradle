@@ -40,7 +40,7 @@ uploadArchives {
     repositories {
         mavenDeployer {
             repository url: targetMavenRepositoryDir
-            pom.version = '1.0.0'
+            pom.version = '1.0.1'
             pom.groupId = 'dev.chuross'
             pom.artifactId = 'aspect-ratio-imageview'
         }
