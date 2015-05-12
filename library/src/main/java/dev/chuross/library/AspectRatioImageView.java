@@ -52,14 +52,10 @@ public class AspectRatioImageView extends ImageView {
     @Override
     protected void onMeasure(final int widthMeasureSpec, final int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-        int aspectRatio = calculateAspectRatio(widthRatio, heightRatio);
-
-        int adjustedWidthRatio = widthRatio / aspectRatio;
-        int adjustedHeightRatio = heightRatio / aspectRatio;
 
         int width = getMeasuredWidth();
-        int sizePerRatio = Math.round(width / adjustedWidthRatio);
-        int height = sizePerRatio * adjustedHeightRatio;
+        float sizePerRatio = (float) width / (float) widthRatio;
+        int height = Math.round(sizePerRatio * heightRatio);
 
         setMeasuredDimension(width, height);
     }
@@ -86,35 +82,5 @@ public class AspectRatioImageView extends ImageView {
         if(ratio <= 0) {
             throw new IllegalArgumentException("ratio > 0");
         }
-    }
-
-    private static int calculateAspectRatio(int width, int height) {
-        int max;
-        int min;
-        if(width > height) {
-            max = width;
-            min = height;
-        } else {
-            max = height;
-            min = width;
-        }
-        if(max <= 0 || min <= 0) {
-            return 0;
-        }
-        int result = 0;
-        int i = 1;
-        while(i > 0) {
-            if(max % min == 0) {
-                result = min;
-                break;
-            }
-            max = max % min;
-            if(min % max == 0) {
-                result = max;
-                break;
-            }
-            min = min % max;
-        }
-        return result;
     }
 }
