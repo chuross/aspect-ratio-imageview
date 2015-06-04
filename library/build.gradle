@@ -39,14 +39,10 @@ android {
 uploadArchives {
     repositories {
         mavenDeployer {
-            repository url: targetMavenRepositoryDir
-            pom.version = '1.0.1'
-            pom.groupId = 'dev.chuross'
+            repository url: System.getenv('LOCAL_MAVEN_REPOSITORY_URL')
+            pom.version = '1.0.2'
+            pom.groupId = 'com.github.chuross'
             pom.artifactId = 'aspect-ratio-imageview'
         }
     }
-}
-
-dependencies {
-    compile 'com.android.support:appcompat-v7:22.0.0'
 }
