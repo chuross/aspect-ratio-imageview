@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    compile 'dev.chuross:aspect-ratio-imageview:1.0.2'
+    compile 'com.github.chuross:aspect-ratio-imageview:1.0.2'
 }
 ```
 
