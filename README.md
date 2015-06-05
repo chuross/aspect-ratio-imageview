@@ -13,7 +13,7 @@ Basically, This library can use as ImageView.
 If you need to adjust by aspect ratio,Add attributes to your layout in this way.
 
 ```
-<dev.chuross.library.AspectRatioImageView
+<com.github.chuross.AspectRatioImageView
     android:id="@+id/img_aspect_image_8"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"

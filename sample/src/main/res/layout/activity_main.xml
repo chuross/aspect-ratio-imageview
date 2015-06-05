@@ -18,7 +18,7 @@
             android:layout_width="960px"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
-            <dev.chuross.library.AspectRatioImageView
+            <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:layout_width="540px"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
-            <dev.chuross.library.AspectRatioImageView
+            <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
-            <dev.chuross.library.AspectRatioImageView
+            <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
-            <dev.chuross.library.AspectRatioImageView
+            <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
-            <dev.chuross.library.AspectRatioImageView
+            <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginBottom="32dp">
-                <dev.chuross.library.AspectRatioImageView
+                <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -157,7 +157,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginBottom="32dp">
-                <dev.chuross.library.AspectRatioImageView
+                <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginBottom="32dp">
-                <dev.chuross.library.AspectRatioImageView
+                <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -205,7 +205,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginBottom="32dp">
-                <dev.chuross.library.AspectRatioImageView
+                <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -224,7 +224,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginBottom="32dp">
-                <dev.chuross.library.AspectRatioImageView
+                <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

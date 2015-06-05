@@ -1,4 +1,4 @@
-package dev.chuross.library;
+package com.github.chuross;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -6,6 +6,7 @@ import android.content.res.TypedArray;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+import dev.chuross.library.R;
 
 public class AspectRatioImageView extends ImageView {
 
