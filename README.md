@@ -28,7 +28,7 @@ If you need to adjust by aspect ratio,Add attributes to your layout in this way.
 ```
 repositories {
     maven {
-        url 'http://chuross.github.com/maven-repository/'
+        maven { url 'https://jitpack.io' }
     }
 }
 
