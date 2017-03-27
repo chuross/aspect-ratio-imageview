@@ -1,4 +1,6 @@
-#AspectRatioImageView
+[![](https://jitpack.io/v/chuross/aspect-ratio-imageview.svg)](https://jitpack.io/#chuross/aspect-ratio-imageview)
+
+# AspectRatioImageView
 This ImageView is adjusted auto by aspect ratio.
 
 ![](http://img.youtube.com/vi/Mzf7YqLeWEQ/0.jpg)
