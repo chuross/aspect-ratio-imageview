@@ -33,7 +33,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.chuross:aspect-ratio-imageview:1.0.2'
+    compile 'com.github.chuross:aspect-ratio-imageview:v1.0.2'
 }
 ```
 
