@@ -1,3 +1,9 @@
+ext {
+    version = [
+        supportLib: '26.0.2'
+    ]
+}
+
 buildscript {
     repositories {
         jcenter()
@@ -11,6 +17,7 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        maven { url "https://maven.google.com" }
     }
 }
 

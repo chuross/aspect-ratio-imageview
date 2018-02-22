@@ -1,14 +1,12 @@
 package com.github.chuross;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.os.Build;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
-import android.widget.ImageView;
 import dev.chuross.library.R;
 
-public class AspectRatioImageView extends ImageView {
+public class AspectRatioImageView extends AppCompatImageView {
 
     private static final int DEFAULT_ASPECT_RATIO = 1;
     private int widthRatio;
@@ -27,12 +25,6 @@ public class AspectRatioImageView extends ImageView {
     public AspectRatioImageView(final Context context, final AttributeSet attrs, final int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(context, attrs, defStyleAttr, 0);
-    }
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public AspectRatioImageView(final Context context, final AttributeSet attrs, final int defStyleAttr, final int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
-        init(context, attrs, defStyleAttr, defStyleRes);
     }
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
