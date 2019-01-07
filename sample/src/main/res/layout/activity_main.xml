@@ -1,30 +1,34 @@
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context=".MainActivity">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="16:9" />
+
         <RelativeLayout
             android:layout_width="960px"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
+
             <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_purple"
-                app:ariv_widthRatio="16"
-                app:ariv_heightRatio="9" />
+                app:ariv_heightRatio="9"
+                app:ariv_widthRatio="16" />
+
             <TextView
                 android:id="@+id/txt_size_1"
                 android:layout_width="wrap_content"
@@ -32,22 +36,26 @@
                 android:layout_centerInParent="true"
                 android:textColor="@android:color/white" />
         </RelativeLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="4:3" />
+
         <RelativeLayout
             android:layout_width="540px"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
+
             <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_orange_dark"
-                app:ariv_widthRatio="4"
-                app:ariv_heightRatio="3" />
+                app:ariv_heightRatio="3"
+                app:ariv_widthRatio="4" />
+
             <TextView
                 android:id="@+id/txt_size_2"
                 android:layout_width="wrap_content"
@@ -55,22 +63,26 @@
                 android:layout_centerInParent="true"
                 android:textColor="@android:color/white" />
         </RelativeLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="nearly 16:9" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
+
             <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_red_dark"
-                app:ariv_widthRatio="16"
-                app:ariv_heightRatio="9" />
+                app:ariv_heightRatio="9"
+                app:ariv_widthRatio="16" />
+
             <TextView
                 android:id="@+id/txt_size_3"
                 android:layout_width="wrap_content"
@@ -78,22 +90,26 @@
                 android:layout_centerInParent="true"
                 android:textColor="@android:color/white" />
         </RelativeLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="nearly 4:3" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
+
             <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_blue_dark"
-                app:ariv_widthRatio="4"
-                app:ariv_heightRatio="3" />
+                app:ariv_heightRatio="3"
+                app:ariv_widthRatio="4" />
+
             <TextView
                 android:id="@+id/txt_size_4"
                 android:layout_width="wrap_content"
@@ -101,22 +117,26 @@
                 android:layout_centerInParent="true"
                 android:textColor="@android:color/white" />
         </RelativeLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="1:1" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="32dp">
+
             <com.github.chuross.AspectRatioImageView
                 android:id="@+id/img_aspect_image_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_green_dark"
-                app:ariv_widthRatio="1"
-                app:ariv_heightRatio="1" />
+                app:ariv_heightRatio="1"
+                app:ariv_widthRatio="1" />
+
             <TextView
                 android:id="@+id/txt_size_5"
                 android:layout_width="wrap_content"
@@ -124,27 +144,32 @@
                 android:layout_centerInParent="true"
                 android:textColor="@android:color/white" />
         </RelativeLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="nearly 16:9 layout_weight=1" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginBottom="32dp">
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1">
+
                 <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/holo_red_dark"
-                    app:ariv_widthRatio="16"
-                    app:ariv_heightRatio="9" />
+                    app:ariv_heightRatio="9"
+                    app:ariv_widthRatio="16" />
+
                 <TextView
                     android:id="@+id/txt_size_6"
                     android:layout_width="wrap_content"
@@ -152,18 +177,21 @@
                     android:layout_centerInParent="true"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginBottom="32dp">
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1">
+
                 <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/holo_blue_dark"
-                    app:ariv_widthRatio="16"
-                    app:ariv_heightRatio="9" />
+                    app:ariv_heightRatio="9"
+                    app:ariv_widthRatio="16" />
+
                 <TextView
                     android:id="@+id/txt_size_7"
                     android:layout_width="wrap_content"
@@ -172,27 +200,32 @@
                     android:textColor="@android:color/white" />
             </RelativeLayout>
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="nearly 4:3 layout_weight=1" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginBottom="32dp">
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1">
+
                 <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/holo_red_dark"
-                    app:ariv_widthRatio="4"
-                    app:ariv_heightRatio="3" />
+                    app:ariv_heightRatio="3"
+                    app:ariv_widthRatio="4" />
+
                 <TextView
                     android:id="@+id/txt_size_8"
                     android:layout_width="wrap_content"
@@ -200,18 +233,21 @@
                     android:layout_centerInParent="true"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginBottom="32dp">
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1">
+
                 <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/holo_blue_dark"
-                    app:ariv_widthRatio="4"
-                    app:ariv_heightRatio="3" />
+                    app:ariv_heightRatio="3"
+                    app:ariv_widthRatio="4" />
+
                 <TextView
                     android:id="@+id/txt_size_9"
                     android:layout_width="wrap_content"
@@ -219,18 +255,21 @@
                     android:layout_centerInParent="true"
                     android:textColor="@android:color/white" />
             </RelativeLayout>
+
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginBottom="32dp">
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1">
+
                 <com.github.chuross.AspectRatioImageView
                     android:id="@+id/img_aspect_image_10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/holo_green_dark"
-                    app:ariv_widthRatio="4"
-                    app:ariv_heightRatio="3" />
+                    app:ariv_heightRatio="3"
+                    app:ariv_widthRatio="4" />
+
                 <TextView
                     android:id="@+id/txt_size_10"
                     android:layout_width="wrap_content"
@@ -239,5 +278,62 @@
                     android:textColor="@android:color/white" />
             </RelativeLayout>
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1:3(fit=height)" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <com.github.chuross.AspectRatioImageView
+                android:id="@+id/img_aspect_image_11"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:background="@android:color/holo_red_dark"
+                app:ariv_fit="height"
+                app:ariv_heightRatio="3"
+                app:ariv_widthRatio="1" />
+
+            <TextView
+                android:id="@+id/txt_size_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="16:12(fit=contain)" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <com.github.chuross.AspectRatioImageView
+                android:id="@+id/img_aspect_image_12"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/holo_blue_dark"
+                app:ariv_fit="contain"
+                app:ariv_heightRatio="16"
+                app:ariv_widthRatio="12" />
+
+            <TextView
+                android:id="@+id/txt_size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

@@ -3,5 +3,10 @@
     <declare-styleable name="AspectRatioImageView">
         <attr name="ariv_widthRatio" format="integer" />
         <attr name="ariv_heightRatio" format="integer" />
+        <attr name="ariv_fit">
+            <enum name="width" value="0" />
+            <enum name="height" value="1" />
+            <enum name="contain" value="2" />
+        </attr>
     </declare-styleable>
 </resources>

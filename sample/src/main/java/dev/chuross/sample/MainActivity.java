@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         setImageViewSize(R.id.img_aspect_image_8, R.id.txt_size_8);
         setImageViewSize(R.id.img_aspect_image_9, R.id.txt_size_9);
         setImageViewSize(R.id.img_aspect_image_10, R.id.txt_size_10);
+        setImageViewSize(R.id.img_aspect_image_11, R.id.txt_size_11);
+        setImageViewSize(R.id.img_aspect_image_12, R.id.txt_size_12);
     }
 
     private void setImageViewSize(int imageViewId, int sizeTextViewId) {
